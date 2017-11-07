@@ -5,6 +5,7 @@
     @yield('meta')
     <link rel="stylesheet" href="/css/master.css" media="screen">
     <script src="/js/jquery.min.js"></script>
+    <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -28,10 +29,10 @@
       <h1>masatrio @ blog</h1>
       <nav>
         <ul>
-          <li><a href="#"><div class="menu-item">Home</div></a></li>
-          <li><a href="#"><div class="menu-item">Blog</div></a></li>
-          <li><a href="#"><div class="menu-item">About</div></a></li>
-          <li><a href="#"><div class="menu-item">Contact</div></a></li>
+          <li><a href="{{ URL::to("/") }}"><div class="menu-item">Home</div></a></li>
+          <li><a href="{{ URL::to("/#") }}"><div class="menu-item">Blog</div></a></li>
+          <li><a href="{{ URL::to("/#") }}"><div class="menu-item">About</div></a></li>
+          <li><a href="{{ URL::to("/contact/") }}"><div class="menu-item">Contact</div></a></li>
         </ul>
       </nav>
     </header>

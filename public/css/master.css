@@ -260,3 +260,7 @@ footer a{
 .contactform input{
   display: block;
 }
+
+nav a:hover{
+  text-decoration: none;
+}

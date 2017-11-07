@@ -19,11 +19,11 @@ class ContactformController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request, [
-          'nama' => 'required',
-          'email' => 'required',
-          'pesan' => 'required';
-        ])
+        // $this->validate($request, [
+        //   'nama' => 'required',
+        //   'email' => 'required',
+        //   'pesan' => 'required';
+        // ])
 
         $data = new Contactform;
         $data->nama = $request->nama;
